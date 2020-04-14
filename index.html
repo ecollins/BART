@@ -743,6 +743,11 @@ This isn't affiliated with <a href="poverty-action.org">Innovations for Poverty 
 
 <div id="graph1"></div>
 
+    <script>
+    Plotly.d3.json("https://ecollins.github.io/BART/figures/json/BartMap.json", function(plotly_data) {
+    var config = {responsive: true}
+    Plotly.newPlot('graph1', plotly_data.data, plotly_data.layout, config ); })
+    </script>
 
 
 
